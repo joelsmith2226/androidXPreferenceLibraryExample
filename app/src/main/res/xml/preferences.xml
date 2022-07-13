@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="notifications_category"
+        app:title="Notifications">
+
+        <SwitchPreferenceCompat
+            app:key="notifications"
+            app:title="Enable message notifications"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="sync"
+        app:title="Sync">
+
+        <SwitchPreferenceCompat
+            app:key="enableSync"
+            app:title="Enable periodic syncing"
+            />
+
+        <EditTextPreference
+            app:key="syncCode"
+            app:title="Sync code"
+            app:dependency="enableSync"
+            app:useSimpleSummaryProvider="true"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

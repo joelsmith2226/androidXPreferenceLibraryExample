@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:key="sendFeedback"
+        app:title="Send Feedback"
+        app:summary="Click here to send feedback"
+        />
+
+
+    <EditTextPreference
+        app:key="name"
+        app:title="Name"
+        app:useSimpleSummaryProvider="true"
+        />
+
+    <SeekBarPreference
+        app:key="enjoy"
+        app:title="How good is Spider-Man 3"
+        />
+
+    <MultiSelectListPreference
+        app:key="feeling"
+        app:title="How are you feeling today?"
+        app:entryValues="@array/options"
+        app:entries="@array/options"
+        app:summary="Select any/all of the above"
+       />
+
+
+    <SwitchPreferenceCompat
+        app:key="pineapple"
+        app:title="Pineapple Belongs On Pizza"
+        app:summary="Yes or no"
+        />
+
+    <CheckBoxPreference
+        app:key="check"
+        app:title="Is this a checkbox?"
+        app:summary="Tick for yes"
+        />
+
+
+</PreferenceScreen>
+
+
